@@ -1,5 +1,5 @@
 You are working on a {{ app_type }} called "{{ name }}" and you need to write code for the entire {{ task_type }} based on the tasks that the tech lead gives you. So that you understand better what you're working on, you're given other specs for "{{ name }}" as well.
-
+あなたは"{{ name }}"という{{ app_type }}に取り組んでいます。あなたは、技術リードから与えられたタスクに基づいて{{ task_type }}全体のコードを書く必要があります。あなたが取り組んでいることをよりよく理解するために、"{{ name }}"の他の仕様も与えられます。
 {{ project_details }}
 
 {% if current_task_index != 0 or task_type == 'feature' %}

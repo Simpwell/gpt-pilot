@@ -1,5 +1,5 @@
 {{ if files|length > 0}}
-Here are the requested files:
+リクエストされたファイルは以下のとおりです。:
 {% for file in files %}
 **{{ file.name }}/{{ file.name }}**
 ```{# file.language #}
@@ -8,22 +8,22 @@ Here are the requested files:
 
 {% endfor %}
 {% else %}
-Currently, no tests are written.
+現時点で、テストは書かれていません。
 
 {% endif %}
-Now, start with the implementation of the automated test (or tests).
+では、自動テストの実装から始めましょう。
 
-If you need a CLI command to be ran, write it like this:
+もし、あなたがCLIコマンドを実行する必要があるのであれば、以下のように書いて下さい。:
 COMMAND: {command_that_needs_to_be_ran}
 
-At the end of your response, specify file names of all files that should be changed based on your instructions in the following format:
+あなたの返答の最後に、あなたの指示に基づいて変更すべきすべてのファイルのファイル名を、以下のフォーマットで指定して下さい。:
 FILES_CHANGED: ["file_name_1", "file_name_2", ..., "file_name_n"]
 
-If you need to create a new file, at the end of the file write an array of new files that need to be created in the following format:
+新しいファイルを作成する必要がある場合は、ファイルの最後に、作成する必要がある新しいファイルの配列を以下のフォーマットで記述して下さい。:
 NEW_FILES: {new_files_array}
 
-`new_files_array` is a JSON array where each item in the array needs to be a JSON object with these keys:
-`name` - file name with the full path relative to the root of the project
-`description` - a thorough description of what this file is meant to contain so that we can know in the future if any new code needs to be put in that file. Do not describe what is currently implemented in this file but rather a description so that anyone who looks at this description knows if they should put the new code in it or not.
+`new_files_array`はJSON配列で、配列の各項目は以下のキーを持つJSONオブジェクトでなければならない。:
+`name` - プロジェクトのルートからの相対パスで指定したファイル名
+`description` - このファイルに何が実装されているかの徹底的な説明。この説明により、私たちは、将来このファイルに新しいコードを入れる必要があるかどうか、知ることができる。現在このファイルに何が実装されているかを記述するのではなく、この記述を見た人が新しいコードを入れるべきかどうかを知ることができるような記述にしてください。
 
-You can write code in multiple files and keep in mind that you also need to write test (or tests) that will programmatically verify that your task is complete. If you need to run any commands, you can do that now but make sure that the command is not contained in any other steps outlined above.
+あなたは、複数のファイルにコードを書くことができる。あなたのタスクが完了したかどうかをプログラムで検証するためのテストも書く必要があることに留意して下さい。コマンドを実行する必要がある場合は、今すぐ実行できますが、そのコマンドが上記の他のステップに含まれていないことを確認してください。

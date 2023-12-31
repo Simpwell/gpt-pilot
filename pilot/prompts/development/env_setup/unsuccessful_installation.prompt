@@ -1,1 +1,1 @@
-Ok, let's install {{ technology }} on my machine. You will tell me commands that I need to run and I will tell you the output I got. Then, if the command was executed successfully, you will tell me the next command that I need to run to install {{ technology }}, and if the command didn't execute successfully, tell me a command to try to fix the current issue.
+では、私のマシンに{{ technology }}をインストールしよう。あなたは私が実行すべきコマンドを教えて下さい。私はコマンドの出力をあなたに伝える。コマンドが正常に実行された場合は、{{ technology }}をインストールするために次に実行する必要があるコマンドを教えて下さい。コマンドが正常に実行されなかった場合は、その問題を解決するためのコマンドを教えて下さい。

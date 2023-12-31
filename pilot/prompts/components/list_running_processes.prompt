@@ -1,5 +1,5 @@
 {% if running_processes -%}
-Note that the following processes are already running:
+以下のプロセスはすでに実行中であることに注意:
 
 {%- for key, data in running_processes.items() %}
 

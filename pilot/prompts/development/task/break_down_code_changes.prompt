@@ -1,29 +1,29 @@
-You need to implement the current changes into a codebase:
--- INSTRUCTIONS --
+あなたは現在の変更をコードベースに反映する必要がある:
+-- 指示 --
 {{ instructions }}
--- END OF INSTRUCTIONS --
+-- 指示終わり --
 
-Here is the current folder tree:
+現在のフォルダツリーは以下の通り:
 ```
 {{ directory_tree }}
 ```
 
-Here are technologies that you can use:
+あなたが使えるテクノロジーは以下の通り:
 ```
 {% for technology in technologies %}
 - {{ technology }}
 {% endfor %}
 ```
 
-First, you need to break down these instructions into actionable steps that can be made. There are 2 types of steps. If a step requires a change in a file content, that step is of a type `code_change` and if a change requires a command to be run (eg. to create a file or a folder), that step is of a type `run_command`.
-For a step to be actionable, it cannot have a vague description but a clear explanation of what needs to be done to finish that step. Here are a couple of examples of good and bad steps:
-BAD STEP: `Set up mongo database`
-GOOD STEP: `Inside db.js, add the following code: {code that needs to be added to the file}`
+まず、これらの指示を実行可能なステップに分解する必要がある。ステップには2種類ある。ファイルの内容を変更する必要がある場合、そのステップは `code_change` というタイプになり、コマンド（ファイルやフォルダの作成など）を実行する必要がある場合、そのステップは `run_command` というタイプになる。
+ステップが実行可能であるためには、漠然とした説明ではだめで、そのステップを完了するために何をする必要があるのかを明確に説明する必要がある。以下は良いステップと悪いステップの例です:
+悪いステップ: `mongo databaseをセットアップして下さい。`
+良いステップ: `db.jsの中に、以下のコードを追記して下さい。: {ファイルに追加する必要があるコード}`
 
-When thinking about steps, first think about what files need to changed to finish this task. When you determine what changes need to be done, put all changes for each file in a single step of type `code_change`.
+ステップを考えるときには、まずこのタスクを完了するためにどのファイルを変更する必要があるのかを考える。あなたが、どのような変更をする必要があるか決めたら、 `code_change` タイプのステップに、各ファイルのすべての変更をまとめる。
 
-So, each step of type `code_change` can contain ALL changes that need to be made to a single file. If changes need to be made to multiple different files, they need to be split across multiple steps where each step contains all changes that need ot be made to a single file.
+つまり、`code_change` タイプの各ステップは、1つのファイルに対して行われる必要があるすべての変更を含むことができる。複数の異なるファイルに変更を加える必要がある場合は、複数のステップに分ける必要がある。各ステップには、1つのファイルに対して行われる必要があるすべての変更が含まれる。
 
-Remember, all commands will be run from the project root folder.
+すべてのコマンドはプロジェクトのルートフォルダーから実行されることを忘れないでください。
 
-Now, think step by step and return a list of steps that need to be run.
+それでは、ステップバイステップで考えて、実行する必要のあるステップのリストを返答して下さい。

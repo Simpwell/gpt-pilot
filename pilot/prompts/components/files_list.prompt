@@ -1,4 +1,4 @@
-{% if files|length > 0 %}Here are files that are currently implemented:
+{% if files|length > 0 %}現在実装されているファイルは以下の通り:
 {% for file in files %}
 **{{ file.path }}/{{ file.name }}**:
 ```

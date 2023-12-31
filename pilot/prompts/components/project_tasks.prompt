@@ -1,42 +1,42 @@
-Before we go into the coding part, I want you to split the development process of creating this {{ task_type }} into smaller tasks so that it is easier to develop, debug and make the {{ task_type }} work. Each smaller task of this {{ task_type }} has to be a whole that can be reviewed by a developer to make sure we're on a right track to create this {{ task_type }} completely.
+私達がコーディング作業に入る前に、この{{ task_type }}を作成する開発プロセスを小さなタスクに、あなたが分割してほしい。そうすれば、開発、デバッグが容易になり、{{ task_type }}を動作させることが容易になる。{{ task_type }}を分割したそれぞれの小さなタスクは、{{ task_type }} を完成させるために正しい方向に進んでいることを、開発者がレビューできるものでなければならない。
 
-Each task needs to be related only to the development of this {{ task_type }} and nothing else - once the {{ task_type }} is fully working, that is it. There shouldn't be a task for researching, deployment, writing documentation, or anything that is not writing the actual code.
+それぞれのタスクは、この{{ task_type }}の開発だけに関連するものでなければならず、それ以外のものであってはならない。{{ task_type }} が完全に動くようになったら、それで終わりとする。リサーチ、デプロイ、ドキュメントの作成など、実際のコードを書く以外のタスクはあってはならない。
 
-Now, based on the project details provided{% if task_type  == 'feature' %} and new feature description{% endif %}, think task by task and create the entire development plan{% if task_type  == 'feature' %} for new feature{% endif %}.{% if task_type  == 'app' %} Start from the project setup and specify each task until the moment when the entire app should be fully working.{% endif %}
+提示されたプロジェクト詳細{% if task_type  == 'feature' %} と新機能の説明{% endif %}に基づいて、タスクごとに考えて、{% if task_type  == 'feature' %}新機能の{% endif %}全体開発計画を策定して下さい。{% if task_type  == 'app' %}プロジェクトのセットアップから開始し、アプリ全体が完全に動作するようになるまで、各タスクを定義します。{% endif %}
 
-**IMPORTANT**
-Dividing project into tasks is extremely important job and has to be done carefully while always strictly following all rules listed bellow.
+**重要**
+プロジェクトをタスクに分割することは非常に重要な仕事であり、以下に挙げるすべてのルールを常に厳守しながら慎重に行わなければならない。
 
-Rule #1
-There should never be a task that is only testing or ensuring something works, every task must have coding involved. Have this in mind for every task, but it is extremely important for last task of project. Testing if {{ task_type }} works will be done as part of each task.
+ルール #1
+テストするだけのタスクや、何かが動作することを確認するだけのタスクがあってはならない。すべてのタスクにはコーディング作業が含まれていなければならない。どのタスクにも言えることだが、プロジェクトの最後のタスクでは特に重要である。 {{ task_type }} が動くかどうかのテストは、各タスクの一部として行われる。
 
-Rule #2
-You have to make sure the project is not split into tasks that are too small or simple for no reason but also not too big or complex so that they are hard to develop, debug and review. Here are examples of poorly created tasks:
+ルール #2
+プロジェクトが、理由もなく小さすぎたり単純すぎたりするタスクに分割されないようにしなければならない。また、開発、デバッグ、レビューが難しくなるような大きすぎたり複雑すぎたりするタスクにも分割されないようにしなければならない。以下は、不十分なタスクの例である:
 
-**too simple tasks**
-- Set up a Node.js project and install all necessary dependencies.
-- Establish a MongoDB database connection using Mongoose with the IP '127.0.0.1'.
+**単純すぎるタスク**
+- Node.jsプロジェクトをセットアップし、必要な依存関係をすべてインストールする。
+- Mongoose を使って、IP '127.0.0.1' で MongoDB データベース接続を確立する。
 
-**too complex tasks**
-- Set up Node.js project with /home, /profile, /register and /login routes that will have user authentication, connection to MongoDB with user schemas, mailing of new users and frontend with nice design.
+**複雑すぎるタスク**
+- ユーザー認証、ユーザースキーマを持つMongoDBへの接続、新規ユーザーのメーリング、素敵なデザインのフロントエンドを持ち、/home、/profile、/register、/loginルートがあるNode.jsプロジェクトを立ち上げる。
 
-You must to avoid creating tasks that are too simple or too complex. You have to aim to create tasks that are medium complexity. Here are examples of tasks that are good:
+あなたは、単純すぎたり複雑すぎたりするタスクを作成することを避けなければならない。あなたは、中程度の複雑さのタスクを作ることを目指さなければならない。以下は良いタスクの例です。:
 
-**good tasks**
-- Set up a Node.js project, install all necessary dependencies and set up an express server with a simple route to `/ping` that returns the status 200.
-- Establish a MongoDB database connection and implement the message schema using Mongoose for persistent storage of messages.
+**良いタスク**
+- Node.jsプロジェクトをセットアップし、必要な依存関係をすべてインストールする。ステータス200を返す`/ping`への単純なルートでexpressサーバーをセットアップする。
+- MongoDB データベース接続を確立し、メッセージの永続的な保存のために Mongoose を使ってメッセージスキーマを実装する。
 
-Rule #3
-Every {{ task_type }} should have different number of tasks depending on complexity. Think task by task and create the minimum number of tasks that are relevant for this specific {{ task_type }}.{% if task_type  == 'feature' %} If the feature is small, it is ok to have only 1 task.{% endif %} Here are some examples of apps with different complexity that can give you guidance on how many tasks you should create:
+ルール #3
+それぞれの{{ task_type }}は、複雑さに応じて、タスク数が異なるはずである。タスクごとに考えて、この特定の{{ task_type }}に適切な最小限のタスクを作成して下さい。{% if task_type  == 'feature' %} もし機能が小さければ、タスクは1つだけでもよい。{% endif %} タスクをいくつ作るべきかの指針になるような、複雑さの異なるアプリの例をいくつか紹介する。:
 
-Example #1:
-app description: "I want to create an app that will just say 'Hello World' when I open it on my localhost:3000."
-number of tasks: 1-3
+例 #1:
+アプリの説明: "localhost:3000で開くと'Hello World'とだけ表示されるアプリを作りたい。"
+タスク数: 1-3
 
-Example #2:
-app description: "Create a node.js app that enables users to register and log into the app. On frontend it should have /home (shows user data), /register and /login. It should use sessions to keep user logged in."
-number of tasks: 2-6
+例 #2:
+アプリの説明: "node.jsアプリを作成して、ユーザーがアプリにユーザー登録したりログインしたりできるようにする。フロントエンドには、/home（ユーザー・データを表示）、/register、/loginが必要。ユーザーがログインした状態を維持するためにセッションを使用する。"
+タスク数: 2-6
 
-Example #3:
-app description: "A cool online shoe store, with a sleek look. In terms of data models, there are shoes, categories and user profiles. For web pages: product listing, details, shopping cart. It must look cool and jazzy."
-number of tasks: 5-15
+例 #3:
+アプリの説明: "かっこいいオンライン靴屋。データモデルとしては、靴、カテゴリー、ユーザープロファイルがある。ウェブページでは、商品一覧、商品詳細、ショッピングカート機能を提供。見た目はかっこよくて洗練されていなければならない。"
+タスク数: 5-15

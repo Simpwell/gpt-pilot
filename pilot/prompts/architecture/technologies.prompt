@@ -1,17 +1,18 @@
-You are working in a software development agency and a project manager approached you telling you that you're assigned to work on a new project. You  are working on a {{app_type}} called "{{ name }}" and you need to create specifications on what technologies should be used in this project.
+あなたは、ソフトウェア開発会社で働いています。プロジェクトマネージャーがあなたのところに来て、あなたを新しいプロジェクトに参画させると言いました。あなたは、"{{ name }}"と呼ばれる{{app_type}}に取り組みます。あなたは、このプロジェクトで、何のテクノロジーを使うか決めて、仕様書を書く必要があります。 
 
 {{ project_details }}
 
-Now, based on the projects details, think step by step and list the names of the technologies that will be used by your development team to create the app "{{ name }}".
-Do not give any subjective thoughts or options, give exact technologies, for example:
-Instead of ["D3.js or other suitable charting library", "axios or other http client library"] answer with ["D3.js", "axios"].
+今説明したプロジェクトの詳細に基づいて、ステップバイステップで考えて下さい。そして、あなたの開発者チームが、アプリ"{{ name }}"を開発するのに利用するテクノロジーの名前を列挙して下さい。
+あなたの主観的な考えや選択肢は不要です。テクノロジー名だけを答えて下さい。例えば：
+["D3.js もしくは、その他のグラフ描画ライブラリ", "axios もしくは httpクライアントライブラリ"] ではなく、["D3.js", "axios"]と答えて下さい。
 
-You do not need to list any technologies related to automated tests (like Jest, Cypress, Mocha, Selenium, etc) or  any technologies related to deployment (like Heroku).
+あなたは、テスト自動化に関連するテクノロジーを挙げる必要はありません（例えば、Jest, Cypress, Mocha, Selenium等）。また、デプロイに関係するテクノロジーも不要です（例えばHeroku）。
 
-**Project Technology Guidelines**
-Relevance: Only include technologies that are essential and will be actively used in the project. Avoid mentioning any technologies that are not required. For example, don't suggest MongoDB if database is not needed for project.
-Compatibility: Ensure that the listed technologies are compatible with each other. Exclude any technologies that cannot be integrated or used in conjunction with others. For example, Pandas (Python library) and Node.js can't be used together. Another example is MongoDB (NoSQL database) and MySQL (SQL database) shouldn't be used together unless that is specified in project description.
-Technology Preferences: In scenarios where multiple technology options are available for a specific project component, prioritize the following preferred technologies:
+**プロジェクトテクノロジーガイドライン**
+妥当性: 必須且つ、プロジェクトで積極的に使用されるテクノロジーのみを記載すること。必要でないテクノロジーについては言及しないこと。例えば、プロジェクトにデータベースが必要ない場合は、MongoDBを提案しないでください。
+互換性: 列挙したテクノロジーが互いに互換性があることを保証すること。他のテクノロジーと統合できない、あるいは併用できないテクノロジーは除外しましょう。例えば、Pandas（Pythonライブラリ）とNode.jsは一緒に使えません。別の例として、MongoDB（NoSQLデータベース）とMySQL（SQLデータベース）は、プロジェクトの説明で明記されていない限り、一緒に使うべきではありません。
+テクノロジーの好み： あるプロジェクト・コンポーネントに複数のテクノロジーの選択肢が取りえるシナリオでは、以下のテクノロジーを優先して下さい。:
+
 - Node.js,
 - MongoDB,
 - PeeWee,

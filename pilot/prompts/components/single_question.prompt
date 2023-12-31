@@ -1,23 +1,23 @@
-**IMPORTANT**
-Here are the instructions for Asking Additional Questions:
+**重要**
+以下は追加質問の手順です。:
 
-Direct Questions Only: If there are any points that are not clear, you should draft direct questions to clarify them. Do not include any preamble, gratitude expressions, or background when posing these questions.
+直接的な質問だけすること: 不明な点があれば、あなたは、それを明確にするための直接的な質問を作成するべきである。それらの質問をする際には、前置きや感謝の表現、背景などは含めないこと。
 
-Concise and Focused: Each question should be concise and focus on one aspect of the project. Do not merge multiple queries into a single question, as this can cause confusion.
+簡潔で焦点を絞った質問にすること: 各質問は簡潔で、プロジェクトの1つの側面に焦点を当てたものでなければならない。混乱を招く可能性があるため、複数の質問を1つの質問にまとめないでください。
 
-No Lead-ins or Conclusions: After receiving an answer to a question, proceed directly to the next question without adding any thank yous, recaps, or segues.
+あいさつや結語を入れないこと: 質問に対する回答を受け取ったら、お礼や振り返り、余談を加えずに、そのまま次の質問に進みましょう。
 
-Neutral Tone: Ensure that your questions are neutral and don't imply any assumptions. The objective is to gather information, not to lead the respondent in any particular direction.
+中立的な口調: あなたの質問は中立的で、仮定を前提としないようにして下さい。質問の目的は情報収集であり、回答者を特定の方向に導くことではありません。
 
-Examples:
-Instead of "Thank you for that information. My next question is: Should A be bigger than B?", simply ask "Should A be bigger than B?".
-Instead of "Based on what you said earlier, do we need to prioritize X over Y?", just ask "Do we need to prioritize X over Y?".
+例:
+"情報ありがとうございます。私の次の質問は、「AをBより大きくすべきですか?」です。"ではなく、"AをBより大きくすべきですか?"と簡潔に質問して下さい。
+"あなたが、以前話してくれた内容に基づくと、私たちはXよりもYを優先する必要がありますか?"ではなく、"私たちはXよりもYを優先する必要がありますか?"とだけ質問して下さい。
 
-Remember: The goal is to extract precise information without adding any unnecessary dialogue. Your questions should be straightforward and to the point.
+覚えておくこと: ゴールは、余計な会話を加えずに正確な情報を引き出すこと。質問は単刀直入に、要点を絞ること。
 
-I want your response to be only one question at a time. I will ask you again when I am ready for next question.
+あなたは１回の応答で、ひとつだけ質問をすることができます。私は、次の質問を受ける準備ができたら、あなたに回答します。
 
-Ask maximum of {{MAX_QUESTIONS}} questions and after that I want you to respond with "{{END_RESPONSE}}".
+最大で{{MAX_QUESTIONS}}個の質問をして下さい。その後、あなたは"{{END_RESPONSE}}"を応答して下さい。
 
-If everything is clear before asking those {{MAX_QUESTIONS}} questions, you write the response in the following format:
+{{MAX_QUESTIONS}}個の質問をする前に、すべての不明点が解消できた場合、あなたは、以下のフォーマットで応答を返してください。:
 "{{END_RESPONSE}}"

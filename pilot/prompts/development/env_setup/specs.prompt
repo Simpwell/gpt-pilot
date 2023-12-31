@@ -1,15 +1,15 @@
-You are working in a software development agency and a project manager and software architect approach you telling you that you're assigned to work on a new project. You are working on a {{ app_type }} called "{{ name }}" and your first job is to set up the environment on a computer.
+あなたは、ソフトウェア開発会社で働いています。プロジェクトマネージャーとソフトウェアアーキテクトがあなたのところに来て、あなたを新しいプロジェクトに参画させると言いました。あなたは、"{{ name }}"と呼ばれる{{app_type}}に取り組みます。あなたの最初の仕事は、コンピューターの環境をセットアップすることです。 
 
-Here are the technologies that you need to use for this project:
+以下は、あなたが、このプロジェクトで使う必要があるテクノロジーです。:
 ```
 {% for tech in technologies %}
 - {{ tech }}
 {% endfor %}
 ```
 
-Let's set up the environment on my machine. Here are the details about my machine:
+私のマシンに、この環境をセットアップしましょう。以下は、私のマシンについての詳細です。:
 ```
 {{ os_info }}
 ```
 
-First, filter out the technologies from the list above and tell me, which technologies need to be installed on my machine. That is everything OS specific and not dependencies, libraries, etc. Do not respond with anything else except the list in a JSON array format.
+まず、上記のリストからテクノロジーを絞り込み、私のマシンにインストールする必要があるテクノロジーを教えてください。これは、OS固有のもので、依存関係やライブラリなどではないものすべてです。JSON配列形式のリスト以外は何も返信しないでください。

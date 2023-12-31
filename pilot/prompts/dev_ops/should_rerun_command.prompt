@@ -1,2 +1,2 @@
-Should I rerun the command `{{ command }}` or is this task done? If I should rerun `{{ command }}`, respond only with YES. If I don't need to rerun the command and the original problem is fixed, respond with NO.
+私は、コマンド`{{ command }}`を再実行する必要がありますか？　それとも、このタスクは完了していますか？　もし、コマンド`{{ command }}`を再実行する必要がある場合、YESとだけ答えて下さい。もし、私がコマンドを再実行する必要がなく、元々の問題が解決したのであれば、NOとだけ答えて下さい。
 {{ list_running_processes }}

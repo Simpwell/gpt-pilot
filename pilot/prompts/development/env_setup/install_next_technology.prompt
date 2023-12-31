@@ -1,4 +1,4 @@
-Let's install `{{ technology }}` - respond with the command that I need to run to check if {{ technology }} is installed and ready to be used on my machine. You must not respond by anything other than these things:
-When you want to tell me a command I need to run, respond only with the command you want me to run and nothing else.
-When the technology is fully installed, respond with `INSTALLED`.
-If the previous command was meant to check if the technology is install and if it wasn't, respond with `NOT_INSTALLED`.
+`{{ technology }}`をインストールしましょう。 - 私のマシンに{{ technology }}がインストールされていて、使えるようになっているかどうか確認するために、私が実行する必要のあるコマンドを返答して下さい。あなたは、以下のこと以外を返答してはならない。:
+あなたが、私に実行する必要のあるコマンドを教えるとき、あなたが私に実行してほしいコマンドのみを返答して下さい。他の返答はしないでください。
+そのテクノロジーが完全にインストールされている場合は、`INSTALLED`と返答して下さい。
+もし、前のコマンドが、そのテクノロジーがインストールされているかチェックするものだったが、インストールされていなかった場合、`NOT_INSTALLED`と返答して下さい。

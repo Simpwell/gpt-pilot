@@ -1,2 +1,2 @@
-Write a list of commands that should be ran that will tell you if the implementation was successful. Write them in a JSON array where each item is a string with the following format:
+実装が成功したかどうかをあなたが知るために実行すべきコマンドのリストを書いて下さい。それらをJSON配列で記述し、各項目は以下のフォーマットで文字列とします。:
 COMMAND: {command_that_needs_to_be_ran}

@@ -1,10 +1,10 @@
-Here is a high level description of "{{ name }}":
+以下は、"{{ name }}"の概要です。:
 ```
 {{ app_summary }}
 ```
 
 {% if clarifications %}
-Here are some additional questions and answers to clarify the apps description:
+以下は、アプリの詳細を明確にするための追加の質問と回答です。:
 ```
 {% for clarification in clarifications %}
 Q: {{ clarification.question }}
@@ -13,7 +13,7 @@ A: {{ clarification.answer }}
 ```
 
 {% endif %}{% if user_stories %}
-Here are user stories that specify how users use "{{ name }}":
+以下は、ユーザーが"{{ name }}"をどのように使用するかを説明するユーザーストーリーです。:
 ```
 {% for story in user_stories %}
 - {{ story }}
@@ -21,7 +21,7 @@ Here are user stories that specify how users use "{{ name }}":
 ```
 
 {% endif %}{% if user_tasks %}
-Here are user tasks that specify what users need to do to interact with "{{ name }}":
+以下は、"{{ name }}"とやり取りするためにユーザーがすべきことを指定するユーザータスクです。:
 ```
 {% for task in user_tasks %}
 - {{ task }}
@@ -29,7 +29,7 @@ Here are user tasks that specify what users need to do to interact with "{{ name
 ```
 
 {% endif %}{% if technologies %}
-Here are the technologies that {% if task_type == 'feature' %}that were used{% else %}you need to use{% endif %} for this project:
+以下は、このプロジェクトのために{% if task_type == 'feature' %}使われる{% else %}あなたが使う必要のある{% endif %}技術です。:
 ```
 {% for tech in technologies %}
 - {{ tech }}
