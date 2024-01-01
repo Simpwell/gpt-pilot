@@ -31,14 +31,15 @@ code_change_description: `{{ step.code_change_description }}`{% endif %}{% endfo
 次に、ステップバイステップ考えて、 `{{ current_step.command.command }}`を実行して得られた出力に基づいて、このタスクを完了するための、新しいステップのリストを作成してください。それは現在と同じになるか、後続ステップのどれかが必要になるか、あるいは不要になるかのどちらかである。
 
 **重要**
-When you think about in which file should the new code go to, always try to make files as small as possible and put code in more smaller files rather than in one big file. Whenever a file becomes too large (more than 50 lines of code) split it into smaller files.
+あなたが新しいコードをどのファイルに入れるべきかを考えるときは、常にできるだけファイルを小さくし、1つの大きなファイルにコードを入れるのではなく、より小さなファイルにコードを入れるようにする。 ファイルが大きくなりすぎたら（50行以上のコード）、小さなファイルに分割してください。
 
 {#
 {% if len(next_steps) > 0 -%}
-Now, think step by step and tell me if the next command `{{ next_steps[0] }}` should be executed or not. If it should be executed, respond with `RUN`. If it shouldn't be executed, respond with `SKIP`.
+次のコマンド`{{ next_steps[0] }}`を実行すべきかどうか、ステップバイステップで考えてみてください。実行すべきであれば `RUN` と答えなさい。 実行すべきでない場合は `SKIP` と答えなさい。
 {% else -%}
-When you look at the output of the command run, is there anything else that should be done to complete this task. If the command was successfully executed, respond with `DONE`. If it wasn't, respond with `NEEDS_DEBUGGING`.
+コマンド実行の出力を見て、このタスクを完了するために他に何かすべきことはありませんか。コマンドが正常に実行された場合は `DONE` と応答する。うまくいかなかった場合は、`NEEDS_DEBUGGING`と応答する。
 
-Do not respond with anything other than these two keywords.
+この2つのキーワード以外を返答してはならない。
+
 {% endif -%}
 #}
