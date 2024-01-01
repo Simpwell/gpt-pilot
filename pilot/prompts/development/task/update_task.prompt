@@ -30,7 +30,7 @@ code_change_description: `{{ step.code_change_description }}`{% endif %}{% endfo
 {% endif %}
 次に、ステップバイステップ考えて、 `{{ current_step.command.command }}`を実行して得られた出力に基づいて、このタスクを完了するための、新しいステップのリストを作成してください。それは現在と同じになるか、後続ステップのどれかが必要になるか、あるいは不要になるかのどちらかである。
 
-**IMPORTANT**
+**重要**
 When you think about in which file should the new code go to, always try to make files as small as possible and put code in more smaller files rather than in one big file. Whenever a file becomes too large (more than 50 lines of code) split it into smaller files.
 
 {#
