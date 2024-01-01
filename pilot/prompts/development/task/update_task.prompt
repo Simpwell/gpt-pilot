@@ -1,5 +1,5 @@
 {% if completed_steps -%}
-We got a plan for how to debug this and we've already done some steps:
+私達は、どのようにデバッグするかについては計画を立てており、すでにいくつかのステップを実施している。:
 ```{% for step in completed_steps %}
 step #{{ loop.index - 1 }}:
 step_type: {{ step.type }}{% if 'command' in step %}
@@ -8,17 +8,18 @@ code_change_description: `{{ step.code_change_description }}`{% endif %}{% endfo
 ```
 {% endif %}
 
-Right now, we're working on the step #{{ current_step_index }}:
+今は、以下のステップに取り組んでいる。
+ #{{ current_step_index }}:
 ```
 step_type: {{ current_step.type }}
 command_to_run: `{{ current_step.command.command }}`
 ```
 
-We've run the command `{{ current_step.command.command }}` and we got the following output:
+私達はコマンド `{{ current_step.command.command }}` を実行し、以下の出力を得た。:
 {{ cli_response }}
 
 {% if next_steps %}
-Here is a list of steps that will be executed after current step:
+以下は、現在のステップの後に実行されるステップのリストである。:
 ```{% for step in next_steps %}
 step #{{ loop.index + current_step_index }}:
 step_type: {{ step.type }}{% if 'command' in step %}
@@ -28,6 +29,16 @@ code_change_description: `{{ step.code_change_description }}`{% endif %}{% endfo
 
 {% endif %}
 Now, think step by step and create a new list of task steps to complete this task based on the output we got from running `{{ current_step.command.command }}`. It will either be the same as it is now or any of the Next Task Steps may or may not be needed anymore.
+
+
+次に、ステップバイステップ考えて、 `{{ current_step.command.command }}`を実行して得られた出力に基づいて、このタスクを完了するための、新しいタスクステップのリストを作成してください。
+
+
+`{current_step.command.command }}`を実行して得られた出力に基づ いて、このタスクを完了するための新しいタスク・ステップのリストを作成する。 それは今と同じになるか、あるいは次のタスクステップのどれかが必要であるか、あるいは必要でなくなるかである。
+
+
+
+
 
 **IMPORTANT**
 When you think about in which file should the new code go to, always try to make files as small as possible and put code in more smaller files rather than in one big file. Whenever a file becomes too large (more than 50 lines of code) split it into smaller files.
