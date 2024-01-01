@@ -15,15 +15,12 @@ COMMAND: {command_that_needs_to_be_ran}
 あなたの返答の最後に、あなたの指示に基づいて変更されるべきすべてのファイルのファイル名を、以下のフォーマットで指定してください。:
 FILES_CHANGED: ["file_name_1", "file_name_2", ..., "file_name_n"]
 
-If you need to create a new file, at the end of the file write an array of new files that need to be created in the following format
-
-
-あなたが新しいファイルを作成する必要がある場合は、作成する必要がある新しいファイルの配列を以下のフォーマットでファイルの最後に記述してください。:
+あなたが新しいファイルを作成する必要がある場合は、作成する必要がある新しいファイル名の配列を以下のフォーマットでファイルの最後に記述してください。:
 NEW_FILES: {new_files_array}
 
-`new_files_array` is a JSON array where each item in the array needs to be a JSON object with these keys:
-`name` - file name with the full path relative to the root of the project
-`description` - a thorough description of what this file is meant to contain so that we can know in the future if any new code needs to be put in that file. Do not describe what is currently implemented in this file but rather a description so that anyone who looks at this description knows if they should put the new code in it or not.
+`new_files_array`はJSON配列です。配列の各項目は以下のキーを持つJSONオブジェクトである必要がある。:
+`name` - ファイル名をプロジェクトのルートからの相対パスで指定する。
+`description` - このファイルに何を入れるべきかの徹底的な説明。その説明により、将来、このファイルに新しいコードを入れる必要があるかどうかを知ることができる。現在このファイルに何が実装されているかを記述するのではなく、この記述を見た人が新しいコードを入れるべきかどうかを知ることができるような記述にしてください。
 
 You can write code in multiple files and keep in mind that you also need to write test (or tests) that will programmatically verify that your task is complete. Remember, automated tests should NEVER open any of the development files (like .js, .py, .json, etc.) and test if something is written inside because this makes the tests brittle and tightly coupled to the code implementation. Automated tests should aim to verify the behavior and functionality of the code, not its internal structure or implementation.
 
