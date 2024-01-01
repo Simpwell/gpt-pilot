@@ -1,4 +1,4 @@
-Here are the requested files:
+要求されたファイルは以下の通り:
 {% for file in files %}
 **{{ file.name }}/{{ file.name }}**
 ```{{ file.language }}
@@ -7,9 +7,9 @@ Here are the requested files:
 
 {% endfor %}
 
-Now, start with the implementation of the current step.
+では、現在のステップの実装を始めよう。
 
-If you need a CLI command to be ran, write it like this:
+もし、あなたがCLIコマンドを実行する場合、以下の通り書いてください。:
 COMMAND: {command_that_needs_to_be_ran}
 
 At the end of your response, specify file names of all files that should be changed based on your instructions in the following format:
