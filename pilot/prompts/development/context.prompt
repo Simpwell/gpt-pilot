@@ -1,10 +1,10 @@
 {%- if directory_tree %}
-The project directory tree looks like:
+プロジェクトのディレクトリツリーは次のようになる。:
 
 {{ directory_tree }}
 {% endif -%}
 {% if running_processes -%}
-Note that the following processes are already running:
+なお、以下のプロセスはすでに実行中である:
 
 {%- for key, data in running_processes.items() %}
 
