@@ -3,7 +3,7 @@ You are working on a {{ app_type }} called "{{ name }}" and you need to write co
 {{ project_details }}
 
 {% if current_task_index != 0 or task_type == 'feature' %}
-So far, this code has been implemented:
+今のところ、このコードは以下の通りに実装されている:
 {% for file in files %}
 **{{ file.path }}/{{ file.name }}**:
 ```{# file.language #}
@@ -13,29 +13,31 @@ So far, this code has been implemented:
 {% endfor %}
 {% endif %}
 
-We've broken the development of this {{ task_type }} down to these tasks:
+私達は、この {{ task_type }}の開発を、以下のタスクに分割した。:
 ```{% for task in development_tasks %}
 {{ loop.index }}. {{ task['description'] }}
 {% endfor %}
 ```
 
-You are currently working on task #{{ current_task_index + 1 }} with the following description:
+あなたは現在、以下の説明に従ってタスク #{{ current_task_index + 1 }}に取り組んでいる。:
 ```
 {{ development_tasks[current_task_index]['description'] }}
 ```
-{% if current_task_index != 0 %}All previous tasks are finished and you don't have to work on them.{% endif %}
-After all the code is finished, a human developer will check if the app works this way - `{{ development_tasks[current_task_index]['user_review_goal'] }}`
+{% if current_task_index != 0 %}これまでのすべてのタスクは完了していて、あなたはそれらに取り組む必要はない。{% endif %}
+全てのコードが完成したら、アプリが以下の通り動作するか人間の開発者がチェックする。 - `{{ development_tasks[current_task_index]['user_review_goal'] }}`
 
-Now, tell me all the code that needs to be written to implement ONLY this task and have it fully working and all commands that need to be run to implement this task.
+では、このタスクだけを実装して完全に動作させるために書くべき全てのコードと、このタスクを実装するために実行する必要のあるコマンドをすべて教えてください。
 
-**IMPORTANT**
+**重要**
 When you think about in which file should the new code go to, always try to make files as small as possible and put code in more smaller files rather than in one big file. Whenever a file becomes too large (more than 50 lines of code) split it into smaller files.
 
-**IMPORTANT**
+**重要**
 {%- if task_type == 'app' %}
-Remember, I created an empty folder where I will start writing files that you tell me and that are needed for this app.
-You do not need to make any automated tests work.
+覚えておいてほしいのは、私が空のフォルダを作っていて、そこにあなたが教えてくれた、このアプリに必要なファイルの書き込みを開始するということだ。
+あなたは、いかなる自動テストも動作させる必要はない。
 {% endif %}
 DO NOT specify commands to create any folders or files, they will be created automatically - just specify the relative path to each file that needs to be written.
+フォルダーやファイルを作成するコマンドを指定しないでください。それらは自動的に作成されます。
+
 
 Never use the port 5000 to run the app, it's reserved.
