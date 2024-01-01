@@ -18,8 +18,7 @@ FILES_CHANGED: ["file_name_1", "file_name_2", ..., "file_name_n"]
 If you need to create a new file, at the end of the file write an array of new files that need to be created in the following format
 
 
-あなたが新しいファイルを作成する必要がある場合は、ファイルの最後に、以下のフォーマットで作成する必要がある新しいファイルの配列を記述してください。
-:
+あなたが新しいファイルを作成する必要がある場合は、作成する必要がある新しいファイルの配列を以下のフォーマットでファイルの最後に記述してください。:
 NEW_FILES: {new_files_array}
 
 `new_files_array` is a JSON array where each item in the array needs to be a JSON object with these keys:
