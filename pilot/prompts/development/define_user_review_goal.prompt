@@ -1,8 +1,10 @@
-How can a human user test if this task was completed successfully? If you specify a command that needs to be run or give example, be very specific. You don't want the user to have to think anything through but rather that they just follow your instructions. Note that any commands will be run on a {{ os }} machine.
+このタスクが正常に完了したかどうかを、人間のユーザーはどうやってテストできるのか？ もし、あなたが、人間のユーザーが実行すべきコマンドを指定したり、例を示したりする場合は、非常に具体的にすること。人間のユーザーには何も考えさせず、あなたの指示に従うだけにしてほしい。どのコマンドも{{ os }}マシン上で実行されることに注意すること。
 
-**IMPORTANT**
-In case the task can be tested by making an API request, do not suggest how can a request be made with Postman but rather write a full cURL command that the user can just run.
-**IMPORTANT**
-Do not require any code writing form the user for testing this task.
+**重要**
+APIリクエストを行うことでタスクをテストできる場合、Postmanでどのようにリクエストを行うことができるかを提案するのではなく、ユーザーがただ実行できる完全なcURLコマンドを書くこと。
 
-Try your best to avoid this if possible, but if it is very difficult to test the task, you can just answer with only this sentence - `There is nothing specific to test for this task so you can write "continue" and we'll move on to the next task.`
+**重要**
+このタスクをテストするために、ユーザーにコードを書かせないこと。
+
+もし、タスクをテストするのが非常に難しい場合は、以下のようにだけ答えてよい。 - `このタスクでは特にテストすることがないので、"continue"と書いてください。私達は次のタスクに進めます。`　
+但し、可能であれば、このようなことがないように最善を尽くしてください。
