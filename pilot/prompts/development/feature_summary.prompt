@@ -11,14 +11,14 @@
 {{ feature_description }}
 ```
 
-Then a development plan for that feature was created and the feature was then broken down to smaller tasks so that it's easier for development. Here is development plan:
+そして、その機能の開発計画が作成された。その機能は開発しやすいように小さなタスクに分解された。これが開発計画だ。:
 ```{% for task in development_tasks %}
 - {{ loop.index }}. {{ task['description'] }}
 {% endfor %}
 ```
 
-Your goal is to create summary describing ONLY this feature in as little amount of sentences as possible. Try to keep it as short as possible.
+あなたのゴールは、できるだけ少ない文章で、この機能のみを説明するサマリーを作成することである。できるだけ短くまとめること。
 
-You are not making summary of project or tasks. Only summary of this feature.
+あなたはプロジェクトやタスクのサマリーを作成するのではない。この機能の要約だけを作成する。
 
 {{summary_instructions}}
