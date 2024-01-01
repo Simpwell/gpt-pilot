@@ -2,4 +2,4 @@
 
 {{ testing_files_tree }}
 
-Remember, ask for files relative to the project root. For example, if you need a file with path `{project_root}/models/model.py`, you need to request the file `models/model.py`.
+プロジェクトルートからの相対パスでファイルを指定してください。 例えば、パス`{project_root}/models/model.py`のファイルが必要な場合、あなたはファイル `models/model.py` をリクエストする必要があります。
