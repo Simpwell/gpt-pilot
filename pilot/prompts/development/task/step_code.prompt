@@ -12,10 +12,14 @@
 もし、あなたがCLIコマンドを実行する場合、以下の通り書いてください。:
 COMMAND: {command_that_needs_to_be_ran}
 
-At the end of your response, specify file names of all files that should be changed based on your instructions in the following format:
+あなたの返答の最後に、あなたの指示に基づいて変更されるべきすべてのファイルのファイル名を、以下のフォーマットで指定してください。:
 FILES_CHANGED: ["file_name_1", "file_name_2", ..., "file_name_n"]
 
-If you need to create a new file, at the end of the file write an array of new files that need to be created in the following format:
+If you need to create a new file, at the end of the file write an array of new files that need to be created in the following format
+
+
+あなたが新しいファイルを作成する必要がある場合は、ファイルの最後に、以下のフォーマットで作成する必要がある新しいファイルの配列を記述してください。
+:
 NEW_FILES: {new_files_array}
 
 `new_files_array` is a JSON array where each item in the array needs to be a JSON object with these keys:
