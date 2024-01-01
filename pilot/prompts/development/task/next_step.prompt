@@ -1,18 +1,21 @@
 {% if step_index != 0 %}
-So far, steps {{ finished_steps }} are finished so let's do
+これまでに、ステップ{{ finished_steps }} が完了したので、
 {% else %}
-Let's start with the{% endif %} step #{{ step_index }}. Here is the description of this step:
+{% endif %} ステップ #{{ step_index }}を開始しよう。このステップの説明は以下の通りだ。:
 ```
 {{ step_description }}
 ```
-Think step by step about what needs to be done to fulfill this step.
+このステップを完遂するために何をすべきか、ステップバイステップで考えてください。
 {% if step_type == 'COMMAND' %}
-Respond with all commands that need to be run to fulfill this step.
+このステップを遂行するために実行する必要のあるすべてのコマンドを返答してください。
 {% elif step_type == 'CODE_CHANGE' %}
-First, you need to know the code that's currently written so that you can appropriately write new or update the existing code. {# Here are all the file that are written so far in a file tree format:
+まず、あなたは、現在書かれているコードを知る必要がある。そうすることで、あなたは、新しいコードを書いたり、既存のコードを更新したりすることが適切にできる。
+ {# 以下に、これまでに書かれたすべてのファイルをファイルツリー形式で示す。:
 ```
 {{ directory_tree }}
 ```
 #}
-Respond with a list of files that you need to see before you can write the code for the current step. This list needs to be in a JSON array where each item is a file name. Do not respond with anything other than the mentioned JSON array.
+あなたが現在のステップのコードを書く前に見る必要のあるファイルのリストを返答してください。このリストは、各項目がファイル名であるJSON配列である必要があります。指定されたJSON配列以外では応答しないでください。
+
+
 {% endif %}
