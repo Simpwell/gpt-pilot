@@ -3,6 +3,6 @@
 
 1. ひとつのコマンド（または複数のコマンド）を実行して検証 - これは、自動テストが過剰な場合に適している。例えば、私達が新しいパッケージをインストールしたり、設定を変更したりした場合などだ。この場合、人間の介入は不要であることに留意してください。 - あなたが私に伝えるコマンドを、私は実行し、CLI出力結果をあなたに見せます。その結果から、あなたは、テストが成功したか失敗したか判断できるはずです。
 
-2. By requesting that a human checks if everything works as expected - this is the last option that we want to avoid but if we can't test the functionality programmatically, we should ask a human to check if it works as expected. For example, if something was visually changed in the UI. If you have any option to test the code change with an automated test or a command, you always do it. Manual test is the last resort that should be avoided if possible.
+2. すべてが期待通りに動くかどうかを人間がチェックするよう依頼 - これは、私達が避けたい最後の選択肢だが、プログラムで機能をテストできない場合は、期待通りに動くかどうかを人間にチェックしてもらうべきだ。 例えば、UIが視覚的に変更された場合などだ。 コードの変更を自動テストやコマンドでテストする選択肢があれば、常にそれを実行する。 手動テストは最後の手段であり、可能であれば避けるべきである。
 
 Ok, now, tell me how can we verify if this change was successful and respond only with a keyword for a type of test.
