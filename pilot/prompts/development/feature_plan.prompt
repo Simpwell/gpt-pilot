@@ -2,24 +2,24 @@
 
 {{ project_details }}
 
-Here are development tasks that specify what was already coded:
+以下は、すでに何がコーディングされているかを示す開発タスクである。:
 ```
 {{ development_tasks }}
 ```
 
 {% if previous_features and previous_features|length > 0 %}
-After those tasks, new features were added to {{ app_type }} ""{{ name }}"". Here is a list of all features that are already implemented:
+これらのタスクの後、新機能が {{ app_type }} ""{{ name }}""に追加された。以下は、すでに実装されている全機能のリストである。：
 {% for feature in previous_features %}
 - {{ loop.index }}. {{ feature['summary'] }}
 {% endfor %}
 
 {% endif %}
-Here is directory tree that shows current folder structure of project:
+以下は、プロジェクトの現在のフォルダ構造を示すディレクトリツリーである。:
 ```
 {{ directory_tree }}
 ```
 
-App and all its features are already finished and working. Here are files that are currently implemented:
+アプリとそのすべての機能はすでに完成し、動作している。 以下は現在実装されているファイルである。:
 {% for file in files %}
 **{{ file.path }}/{{ file.name }}**:
 ```
@@ -27,7 +27,7 @@ App and all its features are already finished and working. Here are files that a
 ```
 {% endfor %}
 
-Finally, here is the description of new feature that needs to be added to {{ app_type }} "{{ name }}":
+最後に、{{ app_type }} "{{ name }}"に追加する必要がある新機能について説明する。:
 ```
 {{ feature_description }}
 ```
