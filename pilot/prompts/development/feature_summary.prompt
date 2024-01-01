@@ -1,10 +1,12 @@
-You are working on a {{ app_type }} called "{{ name }}" and you need to create a summary for a new feature.
-Here is a high level description of "{{ name }}":
+あなたは"{{ name }}"という{{ app_type }}に取り組んでおり、新機能のサマリーを作成する必要がある。
+以下は"{{ name }}"のハイレベルな説明である。:
 ```
 {{ app_summary }}
 ```
 
-After {{ app_type }} was successfully coded, user asked for an improvement. Here is what user asked:
+{{ app_type }}のコーディングに成功した後、ユーザーから改善を求められた。以下はユーザーが求めた内容である。
+
+:
 ```
 {{ feature_description }}
 ```
