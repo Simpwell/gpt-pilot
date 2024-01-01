@@ -22,7 +22,18 @@ NEW_FILES: {new_files_array}
 `name` - ファイル名をプロジェクトのルートからの相対パスで指定する。
 `description` - このファイルに何を入れるべきかの徹底的な説明。その説明により、将来、このファイルに新しいコードを入れる必要があるかどうかを知ることができる。現在このファイルに何が実装されているかを記述するのではなく、この記述を見た人が新しいコードを入れるべきかどうかを知ることができるような記述にしてください。
 
-You can write code in multiple files and keep in mind that you also need to write test (or tests) that will programmatically verify that your task is complete. Remember, automated tests should NEVER open any of the development files (like .js, .py, .json, etc.) and test if something is written inside because this makes the tests brittle and tightly coupled to the code implementation. Automated tests should aim to verify the behavior and functionality of the code, not its internal structure or implementation.
+You can write code in multiple files and keep in mind that you also need to write test (or tests) that will programmatically verify that your task is complete. Remember, automated tests should NEVER open any of the development files (like .js, .py, .json, etc.) and test if something is written inside 
+
+
+because this makes the tests brittle and tightly coupled to the code implementation. Automated tests should aim to verify the behavior and functionality of the code, not its internal structure or implementation.
+
+
+あなたは複数のファイルにコードを書くことができますが、タスクが完了したことをプログラムで検証するテストもあなたが書く必要があることを覚えておいてください。 自動テストは、決して開発用のファイル（.js、.py、.json など）を開いて、その中に何かが書かれているかどうかをテストしてはいけません。なぜなら、それをするとテストがもろくなり、コードの実装と密に結合してしまうからだ。
+
+
+自動テストは、コードの振る舞いや機能を検証することを目的とすべきであり、コードの内部構造や実装を検証すべきではありません。
+
+
 
 If you need to run any commands, you can do that now but make sure that the command is not contained in any other steps outlined above.
 
