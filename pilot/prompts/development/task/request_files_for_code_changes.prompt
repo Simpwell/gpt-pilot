@@ -1,14 +1,14 @@
-{#You need to implement the current changes into a codebase:
--- INSTRUCTIONS --
+{#あなたは、現在の修正をコードベースに実装する必要があります。:
+-- 指示 --
 {{ instructions }}
--- END OF INSTRUCTIONS --
-#}{% if step_index != 0 %}So far, steps {{ finished_steps }} are finished so let's do{% else %}Let's start with the{% endif %} step #{{ step_index }} - `{{ step_description }}`.
+-- 指示終わり --
+#}{% if step_index != 0 %}今までのところ、ステップ{{ finished_steps }}が完了したので、{% else %}{% endif %} ステップ #{{ step_index }}を開始しよう。 - `{{ step_description }}`.
 
-{# I will give you each file that needs to be changed and you will implement changes from the instructions. #}To do this, you will need to see the currently implemented files so first, filter the files outlined above that are relevant for the instructions. Then, tell me files that you need to see so that you can make appropriate changes to the code. If no files are needed (eg. if you need to create a file), just return an empty array.
+{# 私は修正が必要な各ファイルをあなたに渡すので、あなたは、指示に従ってファイルを修正してください。 #} そのためには、あなたは、現在実装されているファイルを見る必要があるので、まず、上記のうち、指示に関連するファイルをフィルタリングしてください。それから、コードに適切な変更を加えるために必要なファイルを教えてください。ファイルが必要ない場合（ファイルを作成する必要がある場合など）は、空の配列を返すだけでよい。
 {#
-Here is the current folder tree:
+現在のフォルダーツリーは以下の通り:
 ```
 {{ directory_tree }}
 ```
 #}
-Remember, ask for files relative to the project root. For example, if you need a file with path `{project_root}/models/model.py`, you need to request the file `models/model.py`.
+プロジェクトルートからの相対パスでファイルを指定してください。 例えば、パス`{project_root}/models/model.py`のファイルが必要な場合、あなたはファイル `models/model.py` をリクエストする必要があります。
