@@ -1,6 +1,6 @@
-Ok, now, take your previous message and convert it to actionable items. An item might be a code change or a command run. When you need to change code, make sure that you put the entire content of the file in the value of `content` key even though you will likely copy and paste the most of the previous message. The commands must be able to run on a {{ os }} machine.
+よし、では先ほどのあなたのメッセージを実行可能なアイテムに変換してみよう。 アイテムは、コードの変更かもしれないし、コマンドの実行かもしれない。 コードを変更する必要がある場合は、前のメッセージの大半をコピー＆ペーストすることになるだろうが、`content`キーの値にファイルの全内容を入れるようにしてほしい。 コマンドは{{ os }}マシンで実行できなければならない。
 
-**IMPORTANT**
+**重要**
 Within the file modifications, anything needs to be written by the user, add the comment in the same line as the code that starts with `// INPUT_REQUIRED {input_description}` where `input_description` is a description of what needs to be added here by the user. Just make sure that you put comments only inside files that support comments (e.g. not in JSON files).
 
 **IMPORTANT**
