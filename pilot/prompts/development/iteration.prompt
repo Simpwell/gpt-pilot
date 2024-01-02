@@ -5,21 +5,21 @@
 {{ app_summary }}
 ```
 
-Here are the technologies that you need to use for this project:
+以下は、あなたがこのプロジェクトで使う必要のあるテクノロジーだ。:
 ```{% for tech in technologies %}
 - {{ tech }}{% endfor %}
 ```
 
 {% if development_tasks and current_task %}
-Development process of this app was split into smaller tasks. Here is the list of all tasks:
+このアプリの開発プロセスは小さなタスクに分割された。以下がすべてのタスクのリストである:
 ```{% for task in development_tasks %}
 {{ loop.index }}. {{ task['description'] }}
 {% endfor %}
 ```
-You are currently working on task "{{ current_task.description }}" and you have to focus only on that task.
+あなたは、現在、タスク"{{ current_task.description }}"に取り組んでいて、このタスクだけに集中している。 
 
 {% endif %}
-A part of the app is already finished.Here are files that are currently implemented:
+アプリの一部はすでに完成している。以下は現在実装されているファイルだ:
 {% for file in files %}
 **{{ file.path }}/{{ file.name }}**:
 ```
