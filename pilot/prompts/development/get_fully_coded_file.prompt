@@ -1,4 +1,4 @@
-ファイル `{{ file.path }}/{{ file.name }}` は現在、以下のように見える。:
+以前にコーディングしたファイル `{{ file.path }}/{{ file.name }}` は現在、以下のように見える。:
 ```
 {{ file.content }}
 ```
@@ -8,13 +8,25 @@
 {{ new_file.content }}
 ```
 
-さて、新しい変更を以前に実装したファイルに実装し、完全にコーディングしたファイルを返してください。 以前にコーディングされたファイルや新しい実装に存在しないコード行は追加せず、それら2つだけを組み合わせでください。
+さて、新しい変更を以前にコーディングしたファイルに実装し、完全にコーディングしたファイルを返してください。 以前にコーディングされたファイルや新しい実装に存在しないコード行は追加せず、それら2つだけを組み合わせでください。
 
 **重要**
-All lines of code in the new implementation should be present. From the old implementation, only take the ones that are replaced with the comment `[OLD CODE]` in the new implementation
 新しい実装のコード行はすべて存在する必要がある。古い実装からは、新しい実装で`[OLD CODE]`というコメントで置き換えられているものだけを取り出してください。。
 
 
 **重要**
-Make sure that you respond with all lines of code that are replaced by these comments, including all control structures, error handling, and any other relevant logic that was in the original code.
-Under no circumstances should you ever leave any part of the code snippet unwritten. Every single line of code that exists in the place where the comment lives right now should be replaced. Do not include any code that is above or below the comment but only the code that should be in the position of the comment.
+あなたは、これらのコメントによって置き換えられたすべてのコード行（すべての制御構造、エラー処理、元のコードにあったその他の関連するロジックを含む）を必ず返信すること。
+
+
+
+Under no circumstances should you ever leave any part of the code snippet unwritten. 
+
+Every single line of code that exists in the place where the comment lives right now should be replaced. 
+
+Do not include any code that is above or below the comment but only the code that should be in the position of the comment.
+
+
+どんなことがあっても、コード・スニペットのどの部分についても、書かないままにしてはならない。今コメントがある場所に存在するコード1行1行を置き換えること。 コメントの上や下にあるコードは一切含めず、コメントの位置にあるべきコードだけを含めること。
+
+
+
