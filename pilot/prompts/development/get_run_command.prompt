@@ -1,8 +1,7 @@
-How can I run this app?
 私は、どうやってこのアプリを実行しますか？
-**IMPORTANT**
-Do not reply with anything else but the command with which I can run this app with.
-For example, if the command is "python app.py", then your response needs to be only `python app.py` without the `
+**重要**
+このアプリを実行できるコマンド以外を返信してはいけない。
+例えば、コマンドが"python app.py"であれば、`python app.py`を`無しで返答する必要がある。
 
-If there is no command to run reply with empty response.
-For example, if we only setup package.json and no other files are coded there is no command to run so respond with `` without the `
+実行するコマンドがない場合は、空のレスポンスを返す。
+例えば、package.jsonをセットアップするだけで、他のファイルはコーディングされていない場合、実行するコマンドはないので、``を`無しで返答してください。
