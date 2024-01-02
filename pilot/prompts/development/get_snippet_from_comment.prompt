@@ -23,15 +23,11 @@
 {%- endif -%}
 {%- endfor %}
 
-これらは、以前にコーディングされたファイルに見られる、すでに書かれたコード行のプレースホルダーであり、最初の実装と完全に同じであるべきコード行を表している。
+これらは、以前にコーディングされたファイルのコード行を置くためのプレスホルダーである。最初の実装と完全に同じであるべきコード行を表している。あなたは、以前のコードを見て、ステップバイステップで考えてほしい。そして、これらのコメントを置き換えるコード行を特定し、正確にそのコード行で応答すること。
 
+**重要**
+あなたは、これらのコメントによって置き換えられたすべてのコード行（すべての制御構造、エラー処理、元のコードにあったその他の関連するロジックを含む）を必ず返信すること。
 
-These are placeholders for already written lines of code that can be found in the previously coded files that represent lines of code that should be completely the same as in the initial implementation. 
+どんなことがあっても、コード・スニペットのどの部分も書き残すべきでない。 今コメントがある場所に存在するコード1行1行を置き換えること。 コメントの上や下にあるコードは一切含めず、コメントの位置にあるべきコードだけを含めること。
 
-
-
-I want you to look at the earlier code, and think step by step. Then, identify lines of code that are in the place of these comments and respond with exactly those lines of code.
-
-**IMPORTANT**
-Make sure that you respond with all lines of code that are replaced by these comments, including all control structures, error handling, and any other relevant logic that was in the original code.
 Under no circumstances should you ever leave any part of the code snippet unwritten. Every single line of code that exists in the place where the comment lives right now should be replaced. Do not include any code that is above or below the comment but only the code that should be in the position of the comment.
