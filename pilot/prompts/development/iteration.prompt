@@ -1,6 +1,6 @@
-You are working on a {{ app_type }} called "{{ name }}" and you need to write code for the entire application.
+あなたは"{{ name }}"という{{ app_type }}に取り組んでおり、アプリケーション全体のコードを書く必要がある。
 
-Here is a high level description of "{{ name }}":
+以下は、"{{ name }}"のハイレベルな説明である:
 ```
 {{ app_summary }}
 ```
