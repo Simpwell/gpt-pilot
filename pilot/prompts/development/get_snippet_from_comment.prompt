@@ -1,4 +1,4 @@
-Here are previously coded files:
+以下は以前にコーディングされたファイルである。:
 {% for file in previously_coded_files %}
 **{{ file.path }}/{{ file.name }}**:
 ```
@@ -6,7 +6,7 @@ Here are previously coded files:
 ```
 {% endfor %}
 
-And here are the new implementations of these same files:
+そして以下は、同じファイルの新しい実装である。:
 {% for file in files_with_comments -%}
 **{{ file.path }}/{{ file.name }}**:
 ```
@@ -14,7 +14,7 @@ And here are the new implementations of these same files:
 ```
 {%- endfor %}
 
-Look at the following lines of code:
+次のコードを見てほしい。:
 {% for file in files_with_comments -%}
 {% if file.comments|length > 0 -%}
 {%- for comment in file['comments'] -%}
@@ -23,7 +23,14 @@ Look at the following lines of code:
 {%- endif -%}
 {%- endfor %}
 
-These are placeholders for already written lines of code that can be found in the previously coded files that represent lines of code that should be completely the same as in the initial implementation. I want you to look at the earlier code, and think step by step. Then, identify lines of code that are in the place of these comments and respond with exactly those lines of code.
+これらは、以前にコーディングされたファイルに見られる、すでに書かれたコード行のプレースホルダーであり、最初の実装と完全に同じであるべきコード行を表している。
+
+
+These are placeholders for already written lines of code that can be found in the previously coded files that represent lines of code that should be completely the same as in the initial implementation. 
+
+
+
+I want you to look at the earlier code, and think step by step. Then, identify lines of code that are in the place of these comments and respond with exactly those lines of code.
 
 **IMPORTANT**
 Make sure that you respond with all lines of code that are replaced by these comments, including all control structures, error handling, and any other relevant logic that was in the original code.
