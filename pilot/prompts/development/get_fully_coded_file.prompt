@@ -1,18 +1,20 @@
-Here is how the file `{{ file.path }}/{{ file.name }}` looks like right now:
+ファイル `{{ file.path }}/{{ file.name }}` は現在、以下のように見える。:
 ```
 {{ file.content }}
 ```
 
-And here is the new implementation for the same file:
+そして、同じファイルに対する新しい実装を以下に示す。:
 ```
 {{ new_file.content }}
 ```
 
-Now, implement the new changes into the previously implemented file and return the entirely coded file. Do not add any lines of code that are not in the previously coded file or the new implementation but only combine those two.
+さて、新しい変更を以前に実装したファイルに実装し、完全にコーディングしたファイルを返してください。 以前にコーディングされたファイルや新しい実装に存在しないコード行は追加せず、それら2つだけを組み合わせでください。
 
-**IMPORTANT**
+**重要**
 All lines of code in the new implementation should be present. From the old implementation, only take the ones that are replaced with the comment `[OLD CODE]` in the new implementation
+新しい実装のコード行はすべて存在する必要がある。古い実装からは、新しい実装で`[OLD CODE]`というコメントで置き換えられているものだけを取り出してください。。
 
-**IMPORTANT**
+
+**重要**
 Make sure that you respond with all lines of code that are replaced by these comments, including all control structures, error handling, and any other relevant logic that was in the original code.
 Under no circumstances should you ever leave any part of the code snippet unwritten. Every single line of code that exists in the place where the comment lives right now should be replaced. Do not include any code that is above or below the comment but only the code that should be in the position of the comment.
