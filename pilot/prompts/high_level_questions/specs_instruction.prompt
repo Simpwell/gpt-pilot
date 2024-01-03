@@ -1,4 +1,11 @@
 I'm going to show you an overview of tasks that you need to do to lead the process of creating this {{ app_type }} and for each task, I will tell you an example of how would you solve this task for the example app.
+
+
+
+この{{ app_type }}の作成プロセスをリードするために必要なタスクの概要を紹介しよう。各タスクについて、例のアプリでこのタスクをどのように解決するか、例を挙げて説明する。
+
+
+
 Example app description: `Create a script that finds Youtube channels with the word "test" inside the channel name`.
 
 Here is an overview of the tasks that you need to do:
