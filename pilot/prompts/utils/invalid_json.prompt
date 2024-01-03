@@ -1,6 +1,5 @@
-[INST]I received an invalid JSON response. The response was a parseable JSON object, but it is not valid against the schema I provided. The JSON is invalid {{ invalid_reason }}
+[INST]私は無効なJSONレスポンスを受け取った。 レスポンスは解析可能なJSONオブジェクトだったが、私が提供したスキーマに対して有効ではない。 JSONは無効だ{{ invalid_reason }}。
 
-Please try again with a valid JSON object, referring to the previous JSON schema I provided above.
+有効なJSONオブジェクトで再試行してほしい。上で提供したJSONスキーマを参照してほしい。
 
-A response which starts with "I'm sorry for the confusion" would be an example of an invalid response, a preamble must NOT be included.
-[/INST]
+「混乱させて申し訳ありません」で始まるような回答は無効な回答の例であり、前文は含めてはならない。[/INST]
