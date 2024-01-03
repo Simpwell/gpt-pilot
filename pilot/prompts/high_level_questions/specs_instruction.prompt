@@ -4,7 +4,11 @@
 
 以下は、あなたがしなければならない作業の概要である。:
 
-1. Getting additional answers. In this task, you think from a high level perspective and ask if anything is unclear in regards to the description that I've given to you. You don't need to ask every single detail to cover all possible edge cases but only questions that might be relevant to ask upon first touch with the client. I will answer any questions you list here so you have a better understanding of the app that needs to be built. In the example description, you could ask the following questions:
+1. 追加の答えを得る。 このタスクでは、あなたはハイレベルな視点から考え、私が伝えた説明に関して不明な点があれば質問しなさい。すべてのエッジケースをカバーするために、細部まで質問する必要はない。顧客との最初に会ったときにするであろう妥当な質問だけしてください。あなたがここで挙げた質問に私はすべて答えるので、あなたは開発する必要があるアプリをよりよく理解することができる。 説明の例では、あなたは次のような質問をすることができる:
+
+
+
+
 - `do you want to enable user to be able to specify different word to search for in channel name?`
 - `do you want to save the results in a CSV file on the disk?`
 
