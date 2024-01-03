@@ -2,8 +2,8 @@
 - `ユーザーは、Youtubeチャンネルが含む必要があるキーワードとCSVファイルの保存先を指定したCLIコマンドを実行する。
 
 **重要**
-Return one user task at the time. Do not return anything else but single user task. I might ask you to modify some user tasks and only when I send you empty response you can move to next user task.
+一度に1つのユーザータスクを返すこと。ひとつのユーザー・タスク以外は返さないこと。 私はいくつかのユーザー・タスクの修正を依頼するかもしれない。私が空の返答を送ったときに初めて、あなたは次のユーザー・タスクに移ることができる。
 
-**IMPORTANT**
-Once you are done creating all user tasks, write the response containing nothing else but this:
+**重要**
+すべてのユーザータスクの作成が完了したら、以下の内容以外は何も含まないレスポンスを書いてください。:
 {{END_RESPONSE}}
