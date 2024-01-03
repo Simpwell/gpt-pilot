@@ -23,9 +23,10 @@
 - `ユーザーはCLIからスクリプトを実行する。`
 - `ユーザーはCSVファイルで全てのチャネルの一覧を取得する。`
 
-**IMPORTANT**
-Return one user story at the time. Do not return anything else but single user story. I might ask you to modify some user stories and only when I send you empty response you can move to next user story.
+**重要**
+ユーザーストーリーを1つずつ返しなさい。 1つのユーザーストーリー以外は返してはいけない。 私はいくつかのユーザーストーリーを修正するよう依頼するかもしれないが、私が空の返事を送って初めて、あなたは次のユーザーストーリーに移ることができる。
 
-**IMPORTANT**
+
+**重要**
 Once you are done creating all user stories, write the response containing nothing else but this:
 {{END_RESPONSE}}
