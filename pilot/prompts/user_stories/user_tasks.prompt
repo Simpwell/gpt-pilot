@@ -1,7 +1,3 @@
-Ok, great. Now, based on these stories, break down user tasks that a user needs to do to interact with the app. In the example description (`Create a script that finds Youtube channels with the word "test" inside the channel name`), user tasks could be
-
-
-
 よし、素晴らしい。 では、これらのストーリーをもとに、ユーザーがアプリとやりとりするために必要なユーザータスクを分解してください。 例の説明（`チャンネル名の中に "test "という単語が含まれるYoutubeチャンネルを見つけるスクリプトを作成する`）では、ユーザーのタスクは次のようになる:
 - `ユーザーは、Youtubeチャンネルが含む必要があるキーワードとCSVファイルの保存先を指定したCLIコマンドを実行する。
 
