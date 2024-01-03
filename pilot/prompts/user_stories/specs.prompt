@@ -1,10 +1,10 @@
-I want you to create {{ app_type }} (let's call it "{{ name }}") that can be described like this:
+私は、以下に説明するような{{ app_type }} (それを"{{ name }}"と呼ぼう)を作りたい。:
 ```
 {{ prompt }}
 ```
 
 {% if clarifications and clarifications|length > 1 %}
-Here are some additional questions and answers to clarify the {{ app_type }} description:
+以下に、{{ app_type }}の説明を明確にするためのいくつかの追加質問と回答を記載する。:
 ```
 {% for clarification in clarifications[2:] %}
     {% if loop.index is odd %}
@@ -16,9 +16,12 @@ Here are some additional questions and answers to clarify the {{ app_type }} des
 ```
 {% endif %}
 
-Think step by step about the description for the {{ app_type }} "{{ name }}" and the additional questions and answers and break down user stories. You will think about the {{ app_type }} description and the answers listed and create a list of all user stories. A user story is a description of how a user can interact with the {{ app_type }}. For example, if an app's description is `Create a script that finds Youtube channels with the word "test" inside the channel name`, user stories could be:
-- `user will run the script from the CLI`
-- `user will get the list of all channels in a CSV file`
+ {{ app_type }} "{{ name }}" の説明、追加の質問と回答を、ステップバイステップで考えて、ユーザーストーリーを分解しなさい。あなたは{{ app_type }}の説明とリストアップされた回答について考え、すべてのユーザーストーリーのリストを作成する。ユーザーストーリーは、ユーザーが{{ app_type }}とどのようにやり取りできるかを記述したものである。
+
+
+例えば、あるアプリの説明文が「チャンネル名に "test "という単語が含まれるYoutubeチャンネルを見つけるスクリプトを作成する」だった場合、ユーザーストーリーは次のようになる。:
+- `ユーザーはCLIからスクリプトを実行する。`
+- `ユーザーはCSVファイルで全てのチャネルの一覧を取得する。`
 
 **IMPORTANT**
 Return one user story at the time. Do not return anything else but single user story. I might ask you to modify some user stories and only when I send you empty response you can move to next user story.
