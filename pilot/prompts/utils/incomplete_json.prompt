@@ -1,6 +1,6 @@
-[INST]I received an incomplete JSON response. Please provide the remainder of the JSON object. I will append your entire response to the incomplete JSON data below so it is important that you must not include any of the data already received or any text that does not complete the JSON data.
-A response which starts with "Here is the remainder of the JSON object" would be an example of an invalid response, a preamble must NOT be included.
-Note that because the JSON data I have already received is an incomplete JSON object, you will not need to include the opening and closing curly braces in your response, but rather continue off from EXACTLY where the received JSON ends.
+[INST]私は不完全なJSON応答を受け取った。JSONオブジェクトの残りを提供してほしい。私は以下の不完全なJSONデータに、あなたの回答全体を追加するので、すでに受け取ったデータやJSONデータを完成させるのに不要なテキストを含めないことが重要である。
+「以下がJSONオブジェクトの残りです」で始まるようなレスポンスは、無効なレスポンスの例です。前置きは含めてはならない。
+私がすでに受け取ったJSONデータは不完全なJSONオブジェクトであるため、あなたのレスポンスに開閉中括弧を含める必要はない。 むしろ、受信したJSONが終わるところから正確に続けること。
 
 JSON received:
 [/INST]
