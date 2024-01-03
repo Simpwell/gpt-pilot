@@ -1,4 +1,4 @@
-I will show you some of your message to which I want you to make some updates. Please just modify your last message per these instructions:
+私があなたに修正して欲しいと考えている、あなたのメッセージの一部をお見せします。以下の指示に従って、最後のメッセージを修正してほしい。:
 ```
 {{ changes }}
 ```
