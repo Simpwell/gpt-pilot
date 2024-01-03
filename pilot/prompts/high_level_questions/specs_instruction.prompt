@@ -9,8 +9,8 @@
 
 
 
-- `do you want to enable user to be able to specify different word to search for in channel name?`
-- `do you want to save the results in a CSV file on the disk?`
+- `あなたは、ユーザーが別の単語を指定してチャンネル名を検索できるようにしたいですか？`
+- `あなたは、結果をCSVファイルでディスクに保存したいですか？`
 
 2. Break down user stories. In this task, you will think about the {{ app_type }} description and the answers from step #1 and create a list of all user stories. A user story is a description of how a user can interact with the {{ app_type }}. In the example description, user stories could be:
 - `user will run the script from the CLI`
