@@ -9,17 +9,14 @@
 - `あなたは、ユーザーが別の単語を指定してチャンネル名を検索できるようにしたいですか？`
 - `あなたは、結果をCSVファイルでディスクに保存したいですか？`
 
-2. ユーザーストーリーをブレークダウンしなさい。このタスクでは、あなたは{{ app_type }} の説明と、#1の回答について考え、すべてのユーザーストーリーの一覧を作成してください。ユーザーストーリーとは、ユーザーがどのように{{ app_type }} とやりとりできるかの説明である。
+2. ユーザーストーリーを分解する。このタスクでは、あなたは{{ app_type }} の説明と、#1の回答について考え、すべてのユーザーストーリーの一覧を作成してください。ユーザーストーリーとは、ユーザーがどのように{{ app_type }} とやりとりできるかの記述である。 例の説明では、ユーザーストーリーは次のようになるだろう:
+- `ユーザーはCLIからスクリプトを実行する。`
+- `ユーザーは全チャンネルのリストをCSVファイルで取得する。`
 
+3. ユーザータスクを分解する。このタスクでは、{{ app_type }}の説明、ステップ#1の答え、ステップ#2のユーザーストーリーについて考え、ユーザーが{{ app_type }}とやり取りするために必要なユーザータスクのリストを作成する。例の説明では、ユーザータスクは以下のようになる。:
+- `ユーザーは、youtubeチャンネルが含む必要があるキーワードとCSVファイルの保存場所を指定して、CLIコマンドを実行する。`
 
-Break down user stories. In this task, you will think about the {{ app_type }} description and the answers from step #1 and create a list of all user stories. A user story is a description of how a user can interact with the {{ app_type }}. In the example description, user stories could be:
-- `user will run the script from the CLI`
-- `user will get the list of all channels in a CSV file`
-
-3. Break down user tasks. In this task, you will think about the {{ app_type }} description, answers from step #1 and the user stories from the step #2 and create a list of user tasks that a user needs to do to interact with the {{ app_type }}. In the example description, user tasks could be:
-- `user runs the CLI command in which they specify the keyword youtube channel needs to contain and the location where the CSV file will be saved to`
-
-Let's start with the task #1 Getting additional answers. Think about the description for the {{ app_type }} "{{ name }}" and ask questions that you would like to get cleared before going onto breaking down the user stories.
+#1 追加の答えを得る、から始めよう。ユーザーストーリーを分解していく前に、{{ app_type }} "{{ name }}" の説明について考えて、あなたが、クリアにしておきたい質問をしてください。
 
 {{no_microservices}}
 
