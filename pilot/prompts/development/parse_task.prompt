@@ -1,10 +1,11 @@
 よし、では先ほどのあなたのメッセージを実行可能なアイテムに変換してみよう。 アイテムは、コードの変更かもしれないし、コマンドの実行かもしれない。 コードを変更する必要がある場合は、前のメッセージの大半をコピー＆ペーストすることになるだろうが、`content`キーの値にファイルの全内容を入れるようにしてほしい。 コマンドは{{ os }}マシンで実行できなければならない。
 
 **重要**
-Within the file modifications, anything needs to be written by the user, add the comment in the same line as the code that starts with `// INPUT_REQUIRED {input_description}` where `input_description` is a description of what needs to be added here by the user. Just make sure that you put comments only inside files that support comments (e.g. not in JSON files).
+ファイルを修正する中で、ユーザーが何か書く必要がある場合は、コードと同じ行にコメントを追加する。 コメントは`// INPUT_REQUIRED {input_description}`で始まること。`input_description` はユーザーがここに追加する必要のある内容を記述してください。但し、コメントをサポートするファイルの中だけにコメントを入れるようにしてほしい（例えば、JSONファイルの中には入れない）。
 
-**IMPORTANT**
-When you want to add a comment that tells the user to add the previous implementation at that place, make sure that the comment starts with `[OLD CODE]` and add a description of what old code should be inserted here. For example, `[OLD CODE] Login route`.
 
-**IMPORTANT**
-When you think about in which file should the new code go to, always try to make files as small as possible and put code in more smaller files rather than in one big file. Whenever a file becomes too large (more than 50 lines of code) split it into smaller files.
+**重要**
+あなたが、その場所に以前の実装を追加するようにユーザーに指示するコメントを追加したい場合は、`[OLD CODE]`で始まるコメントを記述し、ここにどのような古いコードを挿入すべきかの説明を追加する。例えば、`[OLD CODE] Login route`とする。
+
+**重要**
+あなたが新しいコードをどのファイルに入れるべきかを考えるときは、常にできるだけファイルを小さくし、1つの大きなファイルにコードを入れるのではなく、より小さなファイルにコードを入れるようにする。 ファイルが大きくなりすぎたら（50行以上のコード）、小さなファイルに分割してください。

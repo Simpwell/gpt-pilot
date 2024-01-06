@@ -16,7 +16,7 @@ Here is a description of changes for a task you're currently working on
 ファイルを修正する中で、ユーザーが何か書く必要がある場合は、コードと同じ行にコメントを追加する。 コメントは`// INPUT_REQUIRED {input_description}`で始まること。`input_description` はユーザーがここに追加する必要のある内容を記述してください。但し、コメントをサポートするファイルの中だけにコメントを入れるようにしてほしい（例えば、JSONファイルの中には入れない）。
 
 **重要**
-When you think about in which file should the new code go to, always try to make files as small as possible and put code in more smaller files rather than in one big file. Whenever a file becomes too large (more than 50 lines of code) split it into smaller files.
+あなたが新しいコードをどのファイルに入れるべきかを考えるときは、常にできるだけファイルを小さくし、1つの大きなファイルにコードを入れるのではなく、より小さなファイルにコードを入れるようにする。 ファイルが大きくなりすぎたら（50行以上のコード）、小さなファイルに分割してください。
 
 **重要**
 あなたが、その場所に以前の実装を追加するようにユーザーに指示するコメントを追加したい場合は、`[OLD CODE]`で始まるコメントを記述し、ここにどのような古いコードを挿入すべきかの説明を追加する。例えば、`[OLD CODE] Login route`とする。

@@ -1,10 +1,9 @@
-You are working on a {{ app_type }} called "{{ name }}" and you need to create a detailed documentation for current state of project.
-あなたの最初の仕事は、README.mdファイルを作成することだ。
+あなたは"{{ name }}"と呼ばれる{{ app_type }}に取り組んでおり、あなたは、プロジェクトの現状に関する詳細な文書を作成する必要がある。あなたの最初の仕事は、README.mdファイルを作成することだ。
 
 {{ project_details }}
 
 {{ files_list }}
 
-DO NOT specify commands to create any folders or files, they will be created automatically - just specify the relative path to file that needs to be written.
+フォルダーやファイルを作成するコマンドを指定しないでください。それらは自動的に作成されます。 - 書き込む必要のある各ファイルの相対パスを指定するだけでよい。
 
 さて、提供されたプロジェクトの詳細に基づいて、ステップバイステップで考え、このプロジェクトのREADME.mdファイルを作成してください。
