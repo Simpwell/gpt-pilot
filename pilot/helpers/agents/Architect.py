@@ -20,7 +20,7 @@ class Architect(Agent):
     def get_architecture(self):
         print(json.dumps({
             "project_stage": "architecture"
-        }), type='info')
+        },ensure_ascii=False), type='info')
 
         self.project.current_step = ARCHITECTURE_STEP
 
@@ -33,7 +33,7 @@ class Architect(Agent):
 
         # ARCHITECTURE
         print(color_green_bold("Planning project architecture...\n"))
-        logger.info("Planning project architecture...")
+        logger.info("アーキテクチャの検討...")
 
         self.convo_architecture = AgentConvo(self)
         llm_response = self.convo_architecture.send_message('architecture/technologies.prompt',

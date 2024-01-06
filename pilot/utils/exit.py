@@ -56,8 +56,8 @@ def ask_to_store_prompt(project, path_id):
         "event": "pilot-prompt",
         "data": init_prompt
     }
-    question = ('We would appreciate if you let us store your initial app prompt. If you are OK with that, please just '
-                'press ENTER')
+    question = ('初期アプリのプロンプトを保存させていただければ幸いです。もしよろしければ '
+                'ENTERを押して下さい。')
 
     try:
         answer = styled_text(project, question, ignore_user_input_count=True)
@@ -84,8 +84,8 @@ def ask_user_email(project, path_id, ask_feedback):
         return False
 
     question = (
-        "How did GPT Pilot do? We'd love to talk with you and hear your thoughts. "
-        "If you'd like to be contacted by us, please provide your email address, or just press ENTER to exit:"
+        "GPT Pilotはどうでしたか？ぜひ、皆さんのご意見をお聞かせください。"
+        "弊社からの連絡をご希望の方は、Eメールアドレスをご記入ください。もしくは、ENTERを押して終了してください:"
     )
     feedback = styled_text(project, question, ignore_user_input_count=True)
     if feedback:  # only send if user provided feedback

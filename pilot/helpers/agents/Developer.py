@@ -228,7 +228,7 @@ class Developer(Agent):
                 else:
                     human_intervention_description += color_yellow_bold('\n\nIf you want to run the app, just type "r" and press ENTER and that will run `' + self.run_command + '`')
 
-            response = self.project.ask_for_human_intervention('I need human intervention:',
+            response = self.project.ask_for_human_intervention('あなたの支援が必要です:',
                 human_intervention_description,
                 cbs={
                     'r': lambda conv: run_command_until_success(conv,
@@ -532,7 +532,7 @@ class Developer(Agent):
         user_input = ''
         while user_input.lower() != 'done':
             print('done', type='button')
-            user_input = styled_text(self.project, 'Please set up your local environment so that the technologies listed can be utilized. When you\'re done, write "DONE"')
+            user_input = styled_text(self.project, '記載されているテクノロジーを利用できるように、ローカルの環境を設定してください。終わったら、"DONE"と書いてください。')
         save_progress(self.project.args['app_id'], self.project.current_step, {
             "os_specific_technologies": [],
             "newly_installed_technologies": [],

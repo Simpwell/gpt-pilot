@@ -22,7 +22,7 @@ class ProductOwner(Agent):
     def get_project_description(self):
         print(json.dumps({
             "project_stage": "project_description"
-        }), type='info')
+        },ensure_ascii=False), type='info')
 
         self.project.app = get_app(self.project.args['app_id'], error_if_not_found=False)
 
@@ -42,7 +42,7 @@ class ProductOwner(Agent):
         if 'app_type' not in self.project.args:
             self.project.args['app_type'] = ask_for_app_type()
         if 'name' not in self.project.args:
-            question = 'What is the project name?'
+            question = 'プロジェクト名は何にしますか？'
             print(question, type='ipc')
             self.project.args['name'] = clean_filename(ask_user(self.project, question))
 
@@ -56,7 +56,7 @@ class ProductOwner(Agent):
             #'uri': 'file:///' + self.project.root_path.replace('\\', '/'),
             'path': self.project.root_path,
             'name': self.project.args['name'],
-        }}), type='info')
+        }},ensure_ascii=False), type='info')
 
         high_level_messages = self.ask_clarifying_questions(self.project.main_prompt)
 
@@ -81,7 +81,7 @@ class ProductOwner(Agent):
         return get_additional_info_from_openai(self.project, instructions)
 
     def generate_project_summary(self, high_level_messages: list[dict]):
-        print(color_green_bold('Project Summary:\n'))
+        print(color_green_bold('プロジェクト概要:\n'))
         convo_project_description = AgentConvo(self)
 
         convo_project_description.messages.append({'role': 'system',
@@ -97,7 +97,7 @@ class ProductOwner(Agent):
 
         print(json.dumps({
             "project_stage": "user_stories"
-        }), type='info')
+        },ensure_ascii=False), type='info')
 
         self.project.current_step = USER_STORIES_STEP
         self.convo_user_stories = AgentConvo(self)

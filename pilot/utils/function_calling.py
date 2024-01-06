@@ -183,10 +183,10 @@ class JsonPrompter:
                 specified
         """
         system = (
-            "Help choose the appropriate function to call to answer the user's question."
+            "ユーザーの質問に回答するために呼ぶファンクションを選ぶのを手伝ってください。"
             if function_to_call is None
-            else "**IMPORTANT**"
-        ) + "\nYou must respond with ONLY the JSON object, with NO additional text or explanation."
+            else "**重要**"
+        ) + "\nあなたは、JSONオブジェクトだけで返答しなければならない。テキストや説明を追加しないこと。"
 
         data = (
             self.function_data(functions, function_to_call)

@@ -17,7 +17,7 @@ class TechnicalWriter(Agent):
         print('For now, you have created:\n')
         print(f'{color_green(len(files))} files\n')
         print(f'{color_green(count_lines_of_code(files))} lines of code\n\n')
-        print('Before continuing, GPT Pilot will create some documentation for the project...\n')
+        print('続行する前に、GPT Pilotはプロジェクトのドキュメントを作成します...\n')
         self.create_license()
         self.create_readme()
         self.create_api_documentation()

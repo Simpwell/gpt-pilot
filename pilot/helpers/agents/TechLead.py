@@ -28,8 +28,8 @@ class TechLead(Agent):
             return
 
         # DEVELOPMENT PLANNING
-        print(color_green_bold("Starting to create the action plan for development...\n"))
-        logger.info("Starting to create the action plan for development...")
+        print(color_green_bold("開発のためのアクションプランの作成に着手...\n"))
+        logger.info("開発のためのアクションプランの作成に着手...")
 
         # TODO add clarifications
         llm_response = self.convo_development_plan.send_message('development/plan.prompt',
@@ -45,7 +45,7 @@ class TechLead(Agent):
             }, DEVELOPMENT_PLAN)
         self.project.development_plan = llm_response['plan']
 
-        logger.info('Plan for development is created.')
+        logger.info('開発計画を策定完了')
 
         save_progress(self.project.args['app_id'], self.project.current_step, {
             "development_plan": self.project.development_plan, "app_data": generate_app_data(self.project.args)

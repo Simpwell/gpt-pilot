@@ -137,7 +137,7 @@ class Project:
         self.dot_pilot_gpt.write_project(self)
         print(json.dumps({
             "project_stage": "coding"
-        }), type='info')
+        },ensure_ascii=False), type='info')
         self.developer.start_coding()
 
     def finish(self):
@@ -145,8 +145,8 @@ class Project:
         Finish the project.
         """
         while True:
-            feature_description = ask_user(self, "Project is finished! Do you want to add any features or changes? "
-                                                 "If yes, describe it here and if no, just press ENTER",
+            feature_description = ask_user(self, "プロジェクトは完了しました！機能を追加したり、変更したりしたいですか？"
+                                                 "「はい」の場合はここに記入し、「いいえ」の場合はそのままENTERを押してください。",
                                            require_some_input=False)
 
             if feature_description == '':
@@ -281,7 +281,7 @@ class Project:
                     print('continue', type='button')
                     user_input = styled_text(
                         self,
-                        f'Please open the file {data["path"]} on the line {line_number} and add the required input. Once you\'re done, type "y" to continue.',
+                        f'{data["path"]}を開いて、行{line_number}を必要に応じて修正してください。完了したら"y"と入力してください。',
                         ignore_user_input_count=True
                     )
 
