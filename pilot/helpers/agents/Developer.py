@@ -267,7 +267,7 @@ class Developer(Agent):
             logger.info('Re-running test command: %s', test_command)
             cli_response, llm_response = execute_command_and_check_cli_response(convo, test_command)
             logger.info('After running command llm_response: ' + llm_response)
-            if llm_response == 'NEEDS_DEBUGGING':
+            if llm_response.strip() == 'NEEDS_DEBUGGING':
                 print(color_red('Got incorrect CLI response:'))
                 print(cli_response)
                 print(color_red('-------------------'))
@@ -558,7 +558,7 @@ class Developer(Agent):
             llm_response = self.install_technology(technology)
 
             # TODO: I don't think llm_response would ever be 'DONE'?
-            if llm_response != 'DONE':
+            if llm_response.strip() != 'DONE':
                 llm_response = self.convo_os_specific_tech.send_message(
                     'development/env_setup/unsuccessful_installation.prompt',
                     {'technology': technology},

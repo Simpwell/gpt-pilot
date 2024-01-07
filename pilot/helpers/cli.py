@@ -489,12 +489,12 @@ def run_command_until_success(convo, command,
     if response == 'SKIP':
         return {'success': True, 'user_input': response}
 
-    if cli_response is None and response != 'DONE':
+    if cli_response is None and response.strip() != 'DONE':
         return {'success': False, 'user_input': response}
 
     response = check_if_command_successful(convo, command, cli_response, response, exit_code, additional_message)
 
-    if response != 'DONE':
+    if response.strip() != 'DONE':
         # 'NEEDS_DEBUGGING'
         print(color_red('Got incorrect CLI response:'))
         print(cli_response)
