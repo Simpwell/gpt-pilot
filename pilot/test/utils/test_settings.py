@@ -81,7 +81,7 @@ def test_loader_load_config_file(_mock_from_env, mock_open, expected_config_loca
                 "endpoint": "https://example.com",
             },
         }
-    )
+    ,ensure_ascii=False)
     mock_open.return_value.__enter__.return_value = StringIO(fake_config)
 
     loader = Loader(settings)

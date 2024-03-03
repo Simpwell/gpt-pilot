@@ -155,7 +155,7 @@ def array_of_objects_to_string(array):
 
 
 def hash_data(data):
-    serialized_data = json.dumps(replace_functions(data), sort_keys=True).encode('utf-8')
+    serialized_data = json.dumps(replace_functions(data), sort_keys=True,ensure_ascii=False).encode('utf-8')
     return hashlib.sha256(serialized_data).hexdigest()
 
 

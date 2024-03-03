@@ -378,7 +378,7 @@ class TestProjectFileLists:
         # ...and files
 
         with open(os.path.join(project.root_path, 'package.json'), 'w') as file:
-            json.dump({'name': 'test app'}, file, indent=2)
+            json.dump({'name': 'test app'}, file, indent=2,ensure_ascii=False)
         for path in [
             os.path.join(src, 'main.js'),
             os.path.join(src, 'other.js'),

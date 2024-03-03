@@ -214,9 +214,9 @@ class TestDeveloper:
                     'command': 'node server.js',
                     'timeout': 3000
                 }
-            })
-            choice = json.dumps({'delta': {'content': gpt_response}})
-            line = json.dumps({'choices': [json.loads(choice)]}).encode('utf-8')
+            },ensure_ascii=False)
+            choice = json.dumps({'delta': {'content': gpt_response}},ensure_ascii=False)
+            line = json.dumps({'choices': [json.loads(choice)]},ensure_ascii=False).encode('utf-8')
 
             response = requests.Response()
             response.status_code = 200

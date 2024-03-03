@@ -112,7 +112,7 @@ class JsonPrompter:
             str: The parameters of the function as a JSON schema
         """
         return next(
-            json.dumps(function["parameters"]["properties"], indent=4)
+            json.dumps(function["parameters"]["properties"], indent=4,ensure_ascii=False)
             for function in functions
             if function["name"] == function_to_call
         )

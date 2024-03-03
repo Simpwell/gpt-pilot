@@ -99,7 +99,7 @@ def test_debug_need_to_see_output(mock_save_step, mock_get_completion, mock_get_
     developer.step_command_run = MagicMock()
     developer.step_command_run.side_effect = [
         {
-            'cli_response': 'stdout:\n```\n' + json.dumps({'dependencies': {'something': '0.1.2'}}) + '\n```\n',
+            'cli_response': 'stdout:\n```\n' + json.dumps({'dependencies': {'something': '0.1.2'}},ensure_ascii=False) + '\n```\n',
             'success': True,
         }, {
             'cli_response': 'app is running...',
@@ -114,7 +114,7 @@ def test_debug_need_to_see_output(mock_save_step, mock_get_completion, mock_get_
     convo.load_branch = MagicMock()
     convo.replace_files = MagicMock()
     # hard-wired LLM responses, 1st response asks to see output
-    mock_get_completion.side_effect = [{'text': json.dumps(response)} for response in [{
+    mock_get_completion.side_effect = [{'text': json.dumps(response,ensure_ascii=False)} for response in [{
         'thoughts': 'Hmmm, testing',
         'reasoning': 'I need to see the output of the command',
         'steps': [

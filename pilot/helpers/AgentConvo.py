@@ -135,7 +135,7 @@ class AgentConvo:
             #         string_response.append(str(value))
             #
             # return '\n'.join(string_response)
-            return json.dumps(response)
+            return json.dumps(response,ensure_ascii=False)
         # TODO END
 
     def continuous_conversation(self, prompt_path, prompt_data, function_calls=None):

@@ -36,7 +36,7 @@ class IPCClient:
                 return message['content']
 
     def send(self, data):
-        serialized_data = json.dumps(data, default=json_serial)
+        serialized_data = json.dumps(data, default=json_serial,ensure_ascii=False)
         data_length = len(serialized_data)
         self.client.sendall(data_length.to_bytes(4, byteorder='big'))
         self.client.sendall(serialized_data.encode('utf-8'))

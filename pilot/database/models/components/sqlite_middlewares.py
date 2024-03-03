@@ -10,5 +10,5 @@ class JSONField(TextField):
 
     def db_value(self, value):
         if value is not None:
-            return json.dumps(value)
+            return json.dumps(value,ensure_ascii=False)
         return value

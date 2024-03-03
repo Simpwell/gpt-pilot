@@ -198,7 +198,7 @@ class Loader:
 
         log.debug(f"Saving settings to config file: {self.config_path}")
         with open(self.config_path, "w", encoding="utf-8") as fp:
-            json.dump(config, fp, indent=2, sort_keys=True)
+            json.dump(config, fp, indent=2, sort_keys=True,ensure_ascii=False)
 
     def save(self, *args: list[str]):
         """

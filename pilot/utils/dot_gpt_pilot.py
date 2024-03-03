@@ -74,7 +74,7 @@ class DotGptPilot:
                     'response': json.loads(json_response),
                 }
 
-                json.dump(data, file, indent=2)
+                json.dump(data, file, indent=2,ensure_ascii=False)
 
     def write_project(self, project):
         if not USE_GPTPILOT_FOLDER:
